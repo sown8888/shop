@@ -1,0 +1,62 @@
+@system('clear');
+$a=date('d'); // 
+        $b=date("m");
+        $thoigian=date('d/m');
+$day = [];
+$day= date('d-m-y');
+$today = date("d-m-y");
+$d = date("d-m");
+$key = "duongdeptrai".substr(md5($today), 0 , 8);
+$long_url = "https://autosub88.xyz/keytool.php?key=$key";
+$api_token = 'd69a9acb6d3e853b6c8e026928198ff18bc27311';
+$api_url = "https://link1s.com/api?api={$api_token}&url={$long_url}";
+$result = @json_decode(file_get_contents($api_url), true);
+$checkkey = file_get_contents("https://autosub88.xyz//api_key/keytool.php?key=$key");
+$d = date("d-m");
+$_check = file_exists("keytoolfreelvb$d.txt");
+echo $BWhite."- - - - - - - - - - - - - - - - - - - - - - - - - - - -\n";
+echo $BGreen."Truy Cập Vào Link : $BWhite".$result["shortenedUrl"]."".$BGreen." Để Lấy Key Miễn Phí\n";
+echo $BGreen."Mua key tool vip tại : $BYellow https://autosub88.xyz// \n";
+echo "\033[1;31m[\033[1;33mTHÔNG BÁO\033[1;31m]\033[1;32m Đây Là Tool Free. Key Tool Phải Lấy Lại Mỗi Ngày Nhé \n";
+if ($_check !='1'){
+$gh = date("d-m", strtotime("yesterday"));
+$yt = "keytoolfreelvb$gh.txt";
+$_check2 = file_exists("$yt");
+if($_check2==1){
+  unlink("$yt");
+}
+for($j = 3;$j> 0;$j--){
+  echo $BCyan."Chuyển Hướng Đến Trang Lấy Key Sau $BCyan".$j;
+  sleep(1);
+  echo "\r";
+  echo "                                          \r";
+}
+system("termux-open-url ".$result["shortenedUrl"]."");
+echo $BWhite."- - - - - - - - - - - - - - - - - - - - - - - - - - - -\n";
+    echo " \033[1;33m[\033[1;35mWARNING\033[1;33m] \033[1;32m Nhập Key Miễn Phí Đã Lấy : $BWhite";
+    $keyy = trim(fgets(STDIN));
+    }
+if ($_check =='1'){
+  $keyy = file_get_contents("keytoolfreelvb$d.txt");
+  $vt = 1;
+  echo $BGreen."Đang Lấy Key...";
+  sleep(2);
+  echo "\r                                         \r";
+}
+if($keyy == ''){
+  echo $BRed."Key Sai Rồi, Vào Link Phía Trên Để Lấy Key\n";
+  exit;
+}
+  if($keyy == $key)
+      {
+             echo $BGreen."Key Hợp Lệ\n";
+             $mf = fopen("keytoolfreelvb$d.txt", "w");
+             fwrite($mf, $keyy);
+             fclose($mf);
+      }
+      else
+      {
+           echo $BRed."Key Sai Rồi, Vào Link Phía Trên Để Lấy Key\n";
+           exit;
+      }
+@system('clear');

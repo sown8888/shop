@@ -1,0 +1,48 @@
+# Bảo vệ file .htaccess
+<files .htaccess="">
+order allow,deny
+deny from all
+</files>
+
+RewriteEngine On
+
+#WEBSITE 
+RewriteRule ^login /pages/dangnhap.php [L]
+RewriteRule ^signup /pages/dangky.php [L]
+RewriteRule ^nap-the /pages/napthe.php [L]
+RewriteRule ^nap-momo /pages/momo.php [L]
+
+
+
+#ADMIN
+RewriteRule ^signup /pages/dangky.php [L]
+RewriteRule ^logout /pages/dangxuat.php [L]
+RewriteRule ^nap-the /pages/napthe.php [L]
+
+
+
+#DANH MỤC FACEBOOK
+RewriteRule ^mua-like /facebook/like.php [L]
+RewriteRule ^mua-camxuc /facebook/camxuc.php [L]
+RewriteRule ^mua-camxuccmt /facebook/camxuccmt.php [L]
+RewriteRule ^mua-comment /facebook/cmt.php [L]
+RewriteRule ^mua-page /facebook/likepage.php [L]
+RewriteRule ^mua-follow /facebook/follow.php [L]
+RewriteRule ^mua-share /facebook/share.php [L]
+RewriteRule ^mua-group /facebook/group.php [L]
+
+
+#DANH MỤC YOUTUBE
+RewriteRule ^mua-youtube-follow /youtube/follow.php [L]
+RewriteRule ^mua-youtube-cmt /youtube/cmt.php [L]
+
+
+#DANH MỤC TIKTOK
+RewriteRule ^mua-tiktok-love /tiktok/love.php [L]
+RewriteRule ^mua-tiktok-cmt /tiktok/cmt.php [L]
+RewriteRule ^mua-tiktok-follow /tiktok/follow.php [L]
+
+
+
+
+
